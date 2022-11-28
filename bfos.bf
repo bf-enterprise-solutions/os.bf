@@ -2,7 +2,6 @@
 
  Commands:
  d file = delete the FILE.
- e file = edit the FILE.
  l = list existing files.
  p file = print FILE content.
  q = quit BfOS.
@@ -37,98 +36,89 @@
   ----- ----- ----- -----
   ----- ----- ----- -----
   ----- ----- ----- -----
-  [ ; 'e' (101)
-   -
-   [ ; 'l' (108)
-    ----- --
-    [ ; 'p' (112)
-     ----
-     [ ; 'q' (113)
+  [ ; 'l' (108)
+   ----- ---
+   [ ; 'p' (112)
+    ----
+    [ ; 'q' (113)
+     -
+     [ ; 'r' (114)
       -
-      [ ; 'r' (114)
+      [ ; 's' (115)
        -
-       [ ; 's' (115)
-        -
-        [ ; default case:
-         <->[-] ; empty the flag
-         ;; error
-         ;; question mark
-         +++++ +++++
-         +++++ +++++
-         +++++ +++++
-         +++++ +++++
-         +++++ +++++
-         +++++ +++++ +++.[-]
-         +++++ +++++.[-]
-        ]
-        <
-        [ ; case 's'
-         [-]<<[-]>> ; kill the case flag AND exit flag
-         >>[-] ; kill the space between 's' and file name
-         > ; file name
-         ;; separate the next two arguments by space (32)
-         ----- -----
-         ----- -----
-         ----- ----- --
-         [ ; find next space
-          >  -- -----
-          ----- -----
-          ----- ----- -----]
-         <
-         [ ; restore the contents that are not space
-          +++++ +++++
-          +++++ +++++
-          +++++ +++++ ++ <]
-         >[>] ; move to file beginning
-         - ; set the byte between the name and contents to 255
-         [>] ; to file end
-         <[[>>>+<<<-]<] ; copy the contents three cells to the left
-         >>>> [>] ; to file end
-         >+ ; set new exit flag
-         >> ; to new case flag (empty)
-        ]
-        >
+       [ ; default case:
+        <->[-] ; empty the flag
+        ;; error
+        ;; question mark
+        +++++ +++++
+        +++++ +++++
+        +++++ +++++
+        +++++ +++++
+        +++++ +++++
+        +++++ +++++ +++.[-]
+        +++++ +++++.[-]
        ]
        <
-       [ ; case 'r'
-        [-] ; kill the case flag
-        ;; TODO: File search
-        ;; TODO: Embed MBF
+       [ ; case 's'
+        [-]<<[-]>> ; kill the case flag AND exit flag
+        >>[-] ; kill the space between 's' and file name
+        > ; file name
+        ;; separate the next two arguments by space (32)
+        ----- -----
+        ----- -----
+        ----- ----- --
+        [ ; find next space
+         >  -- -----
+         ----- -----
+         ----- ----- -----]
+        <
+        [ ; restore the contents that are not space
+         +++++ +++++
+         +++++ +++++
+         +++++ +++++ ++ <]
+        >[>] ; move to file beginning
+        - ; set the byte between the name and contents to 255
+        [>] ; to file end
+        <[[>>>+<<<-]<] ; copy the contents three cells to the left
+        >>>> [>] ; to file end
+        >+ ; set new exit flag
+        >> ; to new case flag (empty)
        ]
        >
       ]
-      ;; case 'q': kill the case flag AND exit flag
-      <[[-]<<[-]>>]>
+      <
+      [ ; case 'r'
+       [-] ; kill the case flag
+       ;; TODO: File search
+       ;; TODO: Embed MBF
+      ]
+      >
      ]
-     <
-     [ ; case 'p':
-      [-] ; kill the case flag
-      ;; TODO: File search
-     ]
-     >
+     ;; case 'q': kill the case flag AND exit flag
+     <[[-]<<[-]>>]>
     ]
     <
-    [ ; case 'l':
+    [ ; case 'p':
      [-] ; kill the case flag
-     <<<< ; move to file area
-     [ ; file listing loop
-      [<]> ; move to file name
-      +[-.>+] ; print the file name
-      +++++ +++++.[-] ; print a newline
-      - ; turn it back into 255
-      [<] ; back to file beginning
-      <<<<< <<<<<] ; to next file
-     >>>>> >>>>> > ; to the last file
-     [[>] >>>>> >>>>>] ; move through the files
-     <<<<< <<<<< < ; back to last file end
-     >>>> ; to case flag
+     ;; TODO: File search
     ]
     >
    ]
    <
-   [ ; case 'e':
+   [ ; case 'l':
     [-] ; kill the case flag
-    ;; TODO: Embed bfed
+    <<<< ; move to file area
+    [ ; file listing loop
+     [<]> ; move to file name
+     +[-.>+] ; print the file name
+     +++++ +++++.[-] ; print a newline
+     - ; turn it back into 255
+     [<] ; back to file beginning
+     <<<<< <<<<<] ; to next file
+    >>>>> >>>>> > ; to the last file
+    [[>] >>>>> >>>>>] ; move through the files
+    <<<<< <<<<< < ; back to last file end
+    >>>> ; to case flag
    ]
    >
   ]
