@@ -1,10 +1,10 @@
-[bfos.bf -- the source code of BfOS, Brainfuck-based operating system.
+[os.bf -- the source code of OS.bf, Brainfuck-based operating system.
 
  Commands:
  d file = delete the FILE.
  l = list existing files.
  p file = print FILE content.
- q = quit BfOS.
+ q = quit OS.bf.
  r script file = run the code in SCRIPT on the contents of FILE.
  s file contents = store the CONTENTS in FILE.
 
