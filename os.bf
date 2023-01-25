@@ -128,3 +128,4 @@
  >>[>]<[[-]<] ; zero the command contents and move to command beginning
  <<< ; back to exit flag and loop if not zeroed
 ] ; main loop
+<<<[[<]<] ; to the initial cell (TODO: cleanup code)
