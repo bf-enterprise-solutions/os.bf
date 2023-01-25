@@ -15,7 +15,7 @@
  [name...][255][contents...]
 
  Filesystem layout:
- ... [file] [0][0][0][0][0] [0][0][0][0][0] [file] [0][working memory]
+ ... [0] [file] [0] [file] [0] [0] [working memory]
 
  Code starts here:]
 
@@ -23,10 +23,10 @@
 ;; TODO: string comparison for file names
 ;; TODO: File content movement
 
->+ ; set the exit flag
+>>>+ ; set the exit flag
 [ ; main loop
- >>>,----- ----- [>,----- -----] ; read a text until a newline
- <[+++++ +++++<] ; restore the original text
+ >>>,----- ----- [+++++ +++++>,----- -----] ; read a text until a newline
+ <[<] ; to the command text start
  +> ; set the case flag and get back to the command text
  ;;; switch
  [ ; if exists
@@ -67,21 +67,15 @@
         ----- -----
         ----- -----
         ----- ----- --
-        [ ; find next space
-         >  -- -----
-         ----- -----
-         ----- ----- -----]
-        <
-        [ ; restore the contents that are not space
-         +++++ +++++
-         +++++ +++++
-         +++++ +++++ ++ <]
-        >[>] ; move to file beginning
+        [ ; find next space loop
+         +++++ +++++ +++++
+         +++++ +++++ +++++ ++
+         >  -- ----- -----
+         ----- ----- ----- -----]
         - ; set the byte between the name and contents to 255
-        [>] ; to file end
-        <[[>>>+<<<-]<] ; copy the contents three cells to the left
-        >>>> [>] ; to file end
-        >+ ; set new exit flag
+        [<] ; to file start
+        >[[<<<<<<+>>>>>>-]>] ; copy the contents six cells to the left
+        <<<<+ ; set new exit flag
         >> ; to new case flag (empty)
        ]
        >
@@ -107,18 +101,17 @@
    <
    [ ; case 'l':
     [-] ; kill the case flag
-    <<<< ; move to file area
+    <<<<< ; move to file area
     [ ; file listing loop
      [<]> ; move to file name
      +[-.>+] ; print the file name
      +++++ +++++.[-] ; print a newline
      - ; turn it back into 255
      [<] ; back to file beginning
-     <<<<< <<<<<] ; to next file
-    >>>>> >>>>> > ; to the last file
-    [[>] >>>>> >>>>>] ; move through the files
-    <<<<< <<<<< < ; back to last file end
-    >>>> ; to case flag
+     <] ; to next file
+    >> ; to the last file
+    [[>]>] ; move through the files
+    >>> ; to case flag
    ]
    >
   ]
