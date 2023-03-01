@@ -72,7 +72,7 @@
          +++++ +++++ +++++ ++
          >  -- ----- -----
          ----- ----- ----- -----]
-        - ; set the byte between the name and contents to 255
+        - ; set the byte between the name and contents to 255 (beacon)
         [<] ; to file start
         >[[<<<<<<+>>>>>>-]>] ; copy the contents six cells to the left
         <<<<+ ; set new exit flag
@@ -104,16 +104,15 @@
     <<<<< ; move to file area
     [ ; file listing loop
      [<]> ; move to file name
-     +[-.>+] ; print the file name
+     +[-.>+] ; print the file name until 255 beacon
      +++++ +++++.[-] ; print a newline
-     - ; turn it back into 255
+     - ; turn it back into 255 beacon
      [<] ; back to file beginning
      <] ; to next file
-    >> ; to the last file
+    >> ; to the last file beginning
     [[>]>] ; move through the files
     >>> ; to case flag
-   ]
-   >
+   ]   >
   ]
   <
   [ ; case 'd':
