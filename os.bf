@@ -15,7 +15,7 @@
  [name...][255][contents...]
 
  Filesystem layout:
- [0] [0] [0] [file] [0] ... [file] [0] [file] [0] [0] [working memory]
+ [0] [0] [0] [0] [file] [0] ... [file] [0] [file] [0] [0] [working memory]
 
  Code starts here:]
 
