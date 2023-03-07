@@ -23,7 +23,7 @@
 ;; TODO: string comparison for file names
 ;; TODO: File content movement
 
->>>>+ ; set the exit flag
+>>>>>+ ; set the exit flag
 [ ; main loop
  >>>,----- ----- [+++++ +++++>,----- -----] ; read a text until a newline
  <[<] ; to the command text start
@@ -104,8 +104,8 @@
       [>]<[[>>[>]>+<<[<]<-]>>[[<+>-]>]<<[<]<]>>[[<+>-]>]>>[[<<+>>-]>]<<<[<]<[<]>
       [>]>[>]< ; to the swapped file name
       [[>+<-]<] ; move swapped name closer (bc equal consumes 2 cells to the left)
-      >>[>]>>>>[[<+>-]>] ; move the search name closer
-      <<[<]<<[<]> ; to the file name
+      >>[>]>>>[[<<+>>-]>] ; move the search name closer
+      <<<[<]<[<]> ; to the file name
       ;; equal dot min dot  bf from https://github dot com/aartaka/str dot bf
       [+>]+>[+>]<[<]>[>]<[[>+>+<<-]>[>]<[[>+<-]<]<]>>>[[<<+>>-]>]<<<[<]>[>[>>]<<[[>>+<<-]<<]>>>]>[>>]<<[>>[[<+>-]>]<<[<]<]<[>>[[<+>-]>]>[[<+>-]>]<<[<]<<[<]<]>>[>]>[>]<[[>>+<<-]<]>>>[>]<[-<]>[>]>[>]<[[>>+<<-]<]>>>[>]<[[[>+<-]<]>>[<+>-]>[>]<]<[<<]<<[>->>>[[<<+>>-]>>]+[-<+]<[>+<-]>[>]>[[>+<-]>>]<[<<]<[[>+<-]<]<]->>>[[<<+>>-]>]>[[<<+>>-]>>]+[-<+]><<+>>[[>-<-]>[[-]<<<[-]>>>]>[[<<+>>-]>]>[[>>]<<[[-]<<]<<[[-]<]<[-]>>>>>]<<<<[<]>]<<[<+>-]<<[-[>>+<<-]>[<+>-]<<]>
       [ ; if equal
@@ -176,4 +176,4 @@
  >>[>]<[[-]<] ; zero the command contents and move to command beginning
  <<< ; back to exit flag and loop if not zeroed
 ] ; main loop
-<<<[[<]<]< ; to the initial cell (TODO: cleanup code)
+<<<[[[-]<]<]<< ; to the initial cell
