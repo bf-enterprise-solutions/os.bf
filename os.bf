@@ -5,7 +5,9 @@
  l = list existing files.
  p file = print FILE content.
  q = quit OS.bf.
- r script file = run the code in SCRIPT on the contents of FILE.
+ r script = run the code in SCRIPT on the OS.bf memory,
+            starting from exit flag and extending to the left.
+            Uses meta.bf.
  s file contents = store the CONTENTS in FILE.
 
  Working memory layout:
