@@ -1,14 +1,14 @@
 [os.bf -- the source code of OS.bf, Brainfuck-based operating system.
 
  Commands:
- d file = delete the FILE.
  l = list existing files.
+ s file contents = store the CONTENTS in FILE.
  p file = print FILE content.
- q = quit OS.bf.
+ d file = delete the FILE.
  r script = run the code in SCRIPT on the OS.bf memory,
             starting from exit flag and extending to the left.
             Uses meta.bf.
- s file contents = store the CONTENTS in FILE.
+ q = quit OS.bf.
 
  Working memory layout:
  [exit flag][0][case flag][command...]
