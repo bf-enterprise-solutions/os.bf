@@ -21,7 +21,10 @@
 
  Code starts here:]
 
->>>>>+ ; set the exit flag
+>>
+;; PASTE YOUR EXTENSIONS HERE:
+
+>>>+ ; set the exit flag
 [ ; main loop
  >>>,----- ----- [+++++ +++++>,----- -----] ; read a text until a newline
  <[<] ; to the command text start
