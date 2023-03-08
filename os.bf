@@ -220,7 +220,7 @@ PASTE YOUR EXTENSIONS HERE:
      <<[<]> back to the search name
     ] file search loop ends
     <<<<< to the file
-    [[-]<]
+    [[-]<] delete the file
     >>+ set exit flag
     >> to case flag (empty)
    ]
