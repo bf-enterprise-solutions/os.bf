@@ -19,10 +19,6 @@
 
  Code starts here:]
 
-;; TODO: File shuffling to the back of the filesystem
-;; TODO: string comparison for file names
-;; TODO: File content movement
-
 >>>>>+ ; set the exit flag
 [ ; main loop
  >>>,----- ----- [+++++ +++++>,----- -----] ; read a text until a newline
