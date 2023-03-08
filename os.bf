@@ -92,7 +92,7 @@ PASTE YOUR EXTENSIONS HERE:
         [-]>>[-] kill the case flag and space after the command
         >[>]<[[>+<-]<] copy all the code to the right
         << move to N/case flag (zero: evaluation acts on exit flag)
-        meta dot l dot min dot bf from https://github dot com/aartaka/meta dot bf
+        meta dot l dot min dot bf from https://github dot com/bf minus enterprise minus solutions/meta dot bf
         >>>[-]>[>]<[-------------------------------<]>[<+>[------------[-[-[-[--------------[--[-----------------------------[--[++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[<<+>>-]<->]<[-<++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[<]<[<<[>>>+<<<-]>[<+>-]>[<+>-]<<+>-]<<[>[>[>+<-]<[>+<-]>>>[<<<+>>>-]<+<-]>>>[>]<------------------------------------------------------------[++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[>>+<<-]<------------------------------------------------------------]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[<]<[<<[>>>+<<<-]>[<+>-]>[<+>-]<<+>-]<<[>>+<<-]]>>[<<+>>-]<<>[>[>+<-]<[>+<-]>>>[<<<+>>>-]<+<-]>>>[>]]>]<[-<++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>>>--------------------------------------------------------------[++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[<<+>>-]>--------------------------------------------------------------]++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++<<]>]<[-<+++++++++++++++++++++++++++++++[<]<->>[>]]>]<[-<+++++++++++++++++++++++++++++[<]<+>>[>]]>]<[-<+++++++++++++++[<]<[<<[>>>+<<<-]>[<+>-]>[<+>-]<<+>-]<<.>[>[>+<-]<[>+<-]>>>[<<<+>>>-]<+<-]>>>[>]]>]<[-<++++++++++++++[<]<[<<[>>>+<<<-]>[<+>-]>[<+>-]<<+>-]<<->[>[>+<-]<[>+<-]>>>[<<<+>>>-]<+<-]>>>[>]]>]<[-<+++++++++++++[<]<[<<[>>>+<<<-]>[<+>-]>[<+>-]<<+>-]<<,>[>[>+<-]<[>+<-]>>>[<<<+>>>-]<+<-]>>>[>]]>]<[-<++++++++++++[<]<[<<[>>>+<<<-]>[<+>-]>[<+>-]<<+>-]<<+>[>[>+<-]<[>+<-]>>>[<<<+>>>-]<+<-]>>>[>]]>]>]<<<[+++++++++++++++++++++++++++++++[>>+<<-]<]<
         >>>>[>]<[[-]<]<<<[-] clear the previous input and N/case flag
        ]
@@ -110,13 +110,13 @@ PASTE YOUR EXTENSIONS HERE:
        <<<<< move to the file
        +[-<+] until the 255 beacon
        <[<]> to the file name
-       swap dot bf from https://github dot com/aartaka/str dot bf
+       swap dot bf from https://github dot com/bf minus enterprise minus solutions/str dot bf
        [>]<[[>>[>]>+<<[<]<-]>>[[<+>-]>]<<[<]<]>>[[<+>-]>]>>[[<<+>>-]>]<<<[<]<[<]>
        [>]>[>]< to the swapped file name
        [[>+<-]<] move swapped name closer (bc equal consumes 2 cells to the left)
        >>[>]>>>[[<<+>>-]>] move the search name closer
        <<<[<]<[<]> to the file name
-       equal dot min dot  bf from https://github dot com/aartaka/str dot bf
+       equal dot min dot  bf from https://github dot com/bf minus enterprise minus solutions/str dot bf
        [+>]+>[+>]<[<]>[>]<[[>+>+<<-]>[>]<[[>+<-]<]<]>>>[[<<+>>-]>]<<<[<]>[>[>>]<<[[>>+<<-]<<]>>>]>[>>]<<[>>[[<+>-]>]<<[<]<]<[>>[[<+>-]>]>[[<+>-]>]<<[<]<<[<]<]>>[>]>[>]<[[>>+<<-]<]>>>[>]<[-<]>[>]>[>]<[[>>+<<-]<]>>>[>]<[[[>+<-]<]>>[<+>-]>[>]<]<[<<]<<[>->>>[[<<+>>-]>>]+[-<+]<[>+<-]>[>]>[[>+<-]>>]<[<<]<[[>+<-]<]<]->>>[[<<+>>-]>]>[[<<+>>-]>>]+[-<+]><<+>>[[>-<-]>[[-]<<<[-]>>>]>[[<<+>>-]>]>[[>>]<<[[-]<<]<<[[-]<]<[-]>>>>>]<<<<[<]>]<<[<+>-]<<[-[>>+<<-]>[<+>-]<<]>
        [ if equal
         [-] kill equality flag
@@ -125,7 +125,7 @@ PASTE YOUR EXTENSIONS HERE:
         <[<]<] back to (empty) equality flag and exit
        >>[[<<<+>>>-]>] move file name closer to file contents
        <<<<[<]<[<]> to file contents
-       swap dot bf from https://github dot com/aartaka/str dot bf
+       swap dot bf from https://github dot com/bf minus enterprise minus solutions/str dot bf
        [>]<[[>>[>]>+<<[<]<-]>>[[<+>-]>]<<[<]<]>>[[<+>-]>]>>[[<<+>>-]>]<<<[<]<[<]>
        [>]-[>]>>>> back to search name (if any)
        [ file shuffling loop (if need to search more)
@@ -182,13 +182,13 @@ PASTE YOUR EXTENSIONS HERE:
      <<<<< move to the file
      +[-<+] until the 255 beacon
      <[<]> to the file name
-     swap dot bf from https://github dot com/aartaka/str dot bf
+     swap dot bf from https://github dot com/bf minus enterprise minus solutions/str dot bf
      [>]<[[>>[>]>+<<[<]<-]>>[[<+>-]>]<<[<]<]>>[[<+>-]>]>>[[<<+>>-]>]<<<[<]<[<]>
      [>]>[>]< to the swapped file name
      [[>+<-]<] move swapped name closer (bc equal consumes 2 cells to the left)
      >>[>]>>>[[<<+>>-]>] move the search name closer
      <<<[<]<[<]> to the file name
-     equal dot min dot  bf from https://github dot com/aartaka/str dot bf
+     equal dot min dot  bf from https://github dot com/bf minus enterprise minus solutions/str dot bf
      [+>]+>[+>]<[<]>[>]<[[>+>+<<-]>[>]<[[>+<-]<]<]>>>[[<<+>>-]>]<<<[<]>[>[>>]<<[[>>+<<-]<<]>>>]>[>>]<<[>>[[<+>-]>]<<[<]<]<[>>[[<+>-]>]>[[<+>-]>]<<[<]<<[<]<]>>[>]>[>]<[[>>+<<-]<]>>>[>]<[-<]>[>]>[>]<[[>>+<<-]<]>>>[>]<[[[>+<-]<]>>[<+>-]>[>]<]<[<<]<<[>->>>[[<<+>>-]>>]+[-<+]<[>+<-]>[>]>[[>+<-]>>]<[<<]<[[>+<-]<]<]->>>[[<<+>>-]>]>[[<<+>>-]>>]+[-<+]><<+>>[[>-<-]>[[-]<<<[-]>>>]>[[<<+>>-]>]>[[>>]<<[[-]<<]<<[[-]<]<[-]>>>>>]<<<<[<]>]<<[<+>-]<<[-[>>+<<-]>[<+>-]<<]>
      [ if equal
       [-] kill equality flag
@@ -197,7 +197,7 @@ PASTE YOUR EXTENSIONS HERE:
       <[<]<] back to (empty) equality flag and exit
      >>[[<<<+>>>-]>] move file name closer to file contents
      <<<<[<]<[<]> to file contents
-     swap dot bf from https://github dot com/aartaka/str dot bf
+     swap dot bf from https://github dot com/bf minus enterprise minus solutions/str dot bf
      [>]<[[>>[>]>+<<[<]<-]>>[[<+>-]>]<<[<]<]>>[[<+>-]>]>>[[<<+>>-]>]<<<[<]<[<]>
      [>]-[>]>>>> back to search name (if any)
      [ file shuffling loop (if need to search more)
