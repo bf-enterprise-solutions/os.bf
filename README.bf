@@ -69,4 +69,28 @@ technology. The features of OS.bf are:
    # List the files again to see if the file was actually deleted:
    l
    # Exit OS.bf:
-   q]]]
+   q]]
+
+ [4 EXTENSIONS
+
+  OS.bf is made to be infinitely extensible via Brainfuck startup
+  code. Adding extensions to the OS.bf startup sequence is as easy as
+  copy-pasting the code into the right area in the source code.
+
+  Security-minded user, for instance, might want to set a password on
+  startup, so that no one gets an access to their running OS.bf:
+
+  [bf:
+   ***************************
+   PASTE YOUR EXTENSIONS HERE:
+   password checking: loop if input chars are not the expected ones
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----[] 1
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- -----[] 2
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -[] 3
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----- --[] 4
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ---[] 5
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----[] 6
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----[] 7
+   ,----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -[] 8
+   ,----- ----- [] newline
+   ***************************]]]
