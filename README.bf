@@ -40,22 +40,21 @@ technology. The features of OS.bf are:
  [2 EXAMPLE USAGE
 
   Here's a small session recording to get you started with the features OS.bf has:
-  ======================================
-  # Create a file called HELLO with contents "Hello, OS.bf!":
-  s HELLO Hello, OS.bf!
-  # List all the files:
-  l
-  HELLO
-  # Print the contents of the HELLO file:
-  p HELLO
-  Hello, OS.bf!
-  # Run a script adding 1 to every char in HELLO and printing it:
-  r <<<+[-<+]->[+.>]
-  Ifmmp-!PT/cg"
-  # delete HELLO:
-  d HELLO
-  # List the files again to see if the file was actually deleted:
-  l
-  # Exit OS.bf:
-  q
-  =====================================]]
+  [shell:
+   # Create a file called HELLO with contents "Hello, OS.bf!":
+   s HELLO Hello, OS.bf!
+   # List all the files:
+   l
+   HELLO
+   # Print the contents of the HELLO file:
+   p HELLO
+   Hello, OS.bf!
+   # Run a script adding 1 to every char in HELLO and printing it:
+   r <<<+[-<+]->[+.>]
+   Ifmmp-!PT/cg"
+   # delete HELLO:
+   d HELLO
+   # List the files again to see if the file was actually deleted:
+   l
+   # Exit OS.bf:
+   q]]]
