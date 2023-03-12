@@ -37,7 +37,19 @@ technology. The features of OS.bf are:
   This radical simplicity allows OS.bf to squeeze maximal power out of a
   minimal interface. Try and see for yourself!]
 
- [2 EXAMPLE USAGE
+ [2 GETTING STARTED
+
+  Clone the code:
+  [shell:
+   git clone https://github.com/bf-enterprise-solutions/os.bf.git]
+
+  Find the proper implementation. OS.bf work only on implementations where:
+  - All cells are initially zeroed.
+  - Cell wraparound works in both directions.
+
+  Run OS.bf and enjoy the most revolutionary OS you'll never forget!]
+
+ [3 EXAMPLE USAGE
 
   Here's a small session recording to get you started with the features OS.bf has:
   [shell:
