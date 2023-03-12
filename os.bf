@@ -1,3 +1,5 @@
+[SPDX-FileCopyrightText: Brainfuck Enterprise Solutions
+ SPDX-License-Identifier: WTFPL]
 [os.bf -- the source code of OS.bf, Brainfuck-based operating system.
 
  Commands:
