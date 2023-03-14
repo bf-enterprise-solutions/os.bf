@@ -1,17 +1,19 @@
 [OS.BF---THE OS TO LAST
 
-OS.bf is the project to get operating systems to an effective minimum
-of features. It's written entirely in Brainfuck, an industry standard
-in minimal, portable, architecture-independent, axiomatic
-technology. The features of OS.bf are:
+ OS.bf is the project to get operating systems to an effective minimum
+ of features. It's written entirely in Brainfuck, an industry standard
+ in minimal, portable, architecture-independent, axiomatic
+ technology. The features of OS.bf are:
  - Portability: runs everywhere Brainfuck does and requires only cell
-   wrapping from the implementation it runs on.
+ wrapping from the implementation it runs on.
  - Textuality: has only one interaction medium---the command line. No
-   bloated GUIs, no weird keymaps, just the text.
+ bloated GUIs, no weird keymaps, just the text.
  - Simplicity: has a small set of commands and file operations that
-   cover all the needs of a modern computer user.
+ cover all the needs of a modern computer user.
  - Scriptability: can run arbitrary Brainfuck code on the data it
-   has. This allows for infinite use cases.
+ has, thus allowing for infinite customization.
+ - Containerization: all the code of OS.bf is containerized inside
+ Brainfuck image and only has access to the text you input!
  - Extensibility: just copy-paste the files and operations you need
  into the OS.bf code, restart---and you have your files always with
  you!
