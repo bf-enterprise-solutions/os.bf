@@ -35,6 +35,8 @@ PASTE YOUR EXTENSIONS HERE:
 ***************************
 >>>+ set the exit flag
 [ main loop
+ TODO: Maybe read lazily (read command char first and then use the
+ argument in the handler)?
  >>>,----- ----- [+++++ +++++>,----- -----] read a text until a newline
  <[<] to the command text start
  +> set the case flag and get back to the command text
