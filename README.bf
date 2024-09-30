@@ -99,5 +99,4 @@
 
    [5 TO DO
     - [ ] More commands
-    - [ ] Support for escape sequences (like \n and \t) in s command
     - [ ] Sleep and clock control.]]
